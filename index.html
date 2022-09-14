@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/icons8-react-native-48.png" type="image/png">
+  <title>Demo JS</title>
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="background">
+      <div class="nav-tab" id="navTab">
+        <button class="active" data-tab="Project1" id="homeWork1" onclick="changeTab(event)">Bài Tập 1</button>
+        <button data-tab="Project2" id="homeWork2" onclick="changeTab(event)">Bài Tập 2</button>
+        <button data-tab="Project3" id="homeWork3" onclick="changeTab(event)">Bài Tập 3</button>
+        <button data-tab="Project4" id="homeWork4" onclick="changeTab(event)">Bài Tập 4</button>
+        <button data-tab="Project5" id="homeWork5" onclick="changeTab(event)">Bài Tập 5</button>
+        
+      </div>
+  
+      <div class="tab-content">
+        <div id="Project1" class="tab-item show">
+          <h3>Bài Tập 1: Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + … + n > 10000</h3>
+          <p id="tagKetQua" class="tab-result"></p>
+          <button id="btnNumber">Tính Số Nguyên Dương</button>
+          
+        </div>
+        <div id="Project2" class="tab-item">
+          <h3>Bài Tập 2: Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + … + x^n (Sử dụng vòng lặp và hàm)</h3>
+          <p>nhập vào 2 số x, n </p>
+          <div class="tab__detail detail__b2">
+            <input id="num1" type="number" placeholder="nhập 1 số x">           
+            <input id="num2" type="number" placeholder="nhập 1 số n">        
+          </div>
+          <button id="btnTinhTong">Tính Tổng</button>
+          <p id="tagTinhTong" class="tab-result"></p>
+        </div>
+        <div id="Project3" class="tab-item">
+          <h3>Bài Tập 3: Nhập vào n. Tính giai thừa 1*2*...n</h3>
+          <p>Nhập vào n</p>
+          <div class="tab__detail">
+            <input id="iSo" type="number" placeholder="Nhập 1 số">          
+          </div>
+          <button id="btnGiaiThua">Tinh Giai Thua</button>
+          <p id="tagGiaiThua" class="tab-result"></p>
+        </div>
+        <div id="Project4" class="tab-item">
+          <h3>Bài Tập 4: Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ div.
+            Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì
+            background màu xanh.</h3>
+          <p>Số thẻ div muốn in</p>
+          <div class="tab__detail">
+            <input id="inTheDiv" type="number" placeholder="Số thẻ div">       
+          </div>
+          <button id="btnDiv">In Thẻ Div</button>
+          <div id="inTheDiv1">
+
+          </div>
+        </div>
+
+        <div id="Project5" class="tab-item">
+          <h3>Bài Tập 4: Viết chương trình có một ô input, một button. Khi click vào button
+            thì in ra các số nguyên tố từ 1 tới giá trị của ô input</h3>
+          <p>Kiểm Tra số nguyên tố</p>
+          <div class="tab__detail">
+            <input id="soNguyenTo" type="number" placeholder="nhập vào 1 số">       
+          </div>
+          <button id="checkSNT">In Số Nguyên Tố</button>
+          <p id="soNT1" class="tab-result"></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- MAIN JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
